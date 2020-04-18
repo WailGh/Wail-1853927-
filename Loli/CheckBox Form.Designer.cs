@@ -38,9 +38,7 @@ namespace Loli
             this.BackBttn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
+
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button1.Location = new System.Drawing.Point(12, 12);
@@ -50,9 +48,7 @@ namespace Loli
             this.button1.Text = "Show";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.btnShow_Click);
-            // 
-            // groupBox1
-            // 
+
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.chkBrownie);
             this.groupBox1.Controls.Add(this.chkDonut);
@@ -62,9 +58,7 @@ namespace Loli
             this.groupBox1.Size = new System.Drawing.Size(363, 61);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            // 
-            // chkBrownie
-            // 
+
             this.chkBrownie.AutoSize = true;
             this.chkBrownie.Location = new System.Drawing.Point(271, 19);
             this.chkBrownie.Name = "chkBrownie";
@@ -72,9 +66,7 @@ namespace Loli
             this.chkBrownie.TabIndex = 2;
             this.chkBrownie.Text = "Brownie";
             this.chkBrownie.UseVisualStyleBackColor = true;
-            // 
-            // chkDonut
-            // 
+
             this.chkDonut.AutoSize = true;
             this.chkDonut.Location = new System.Drawing.Point(145, 19);
             this.chkDonut.Name = "chkDonut";
@@ -83,9 +75,7 @@ namespace Loli
             this.chkDonut.Text = "Donut";
             this.chkDonut.UseVisualStyleBackColor = true;
             this.chkDonut.CheckedChanged += new System.EventHandler(this.chkDonut_CheckedChanged);
-            // 
-            // chkCoffee
-            // 
+ 
             this.chkCoffee.AutoSize = true;
             this.chkCoffee.Location = new System.Drawing.Point(21, 19);
             this.chkCoffee.Name = "chkCoffee";
@@ -94,9 +84,7 @@ namespace Loli
             this.chkCoffee.Text = "Coffee";
             this.chkCoffee.UseVisualStyleBackColor = true;
             this.chkCoffee.CheckedChanged += new System.EventHandler(this.chkCoffee_CheckedChanged);
-            // 
-            // BackBttn
-            // 
+
             this.BackBttn.BackColor = System.Drawing.Color.Yellow;
             this.BackBttn.Location = new System.Drawing.Point(12, 376);
             this.BackBttn.Name = "BackBttn";
@@ -104,10 +92,8 @@ namespace Loli
             this.BackBttn.TabIndex = 2;
             this.BackBttn.Text = "Back";
             this.BackBttn.UseVisualStyleBackColor = false;
-            this.BackBttn.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // CheckBox
-            // 
+            this.BackBttn.Click += new System.EventHandler(this.BackBttn_Click);
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Loli.Properties.Resources.Coffee;
@@ -125,7 +111,7 @@ namespace Loli
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BackBttn_Click(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
