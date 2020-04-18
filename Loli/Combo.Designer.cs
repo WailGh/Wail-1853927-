@@ -1,6 +1,6 @@
 ﻿namespace Loli
 {
-    partial class Combo
+    partial class FrmCombo
     {
         /// <summary>
         /// Required designer variable.
@@ -127,7 +127,7 @@
             this.button8.Text = "Back";
             this.button8.UseVisualStyleBackColor = false;
             // 
-            // Combo
+            // frmCombo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -143,7 +143,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Combo";
+            this.Name = "frmCombo";
             this.Text = "Combo";
             this.Load += new System.EventHandler(this.Combo_Load);
             this.ResumeLayout(false);

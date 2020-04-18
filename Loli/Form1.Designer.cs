@@ -54,11 +54,11 @@
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.button21 = new System.Windows.Forms.Button();
+            this.LoginBttn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -371,33 +371,33 @@
             this.button20.Text = "About";
             this.button20.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtUser.Location = new System.Drawing.Point(98, 19);
+            this.txtUser.Multiline = true;
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.TabIndex = 9;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 45);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtPass.Location = new System.Drawing.Point(98, 45);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.TabIndex = 10;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Black;
             this.groupBox7.Controls.Add(this.linkLabel1);
-            this.groupBox7.Controls.Add(this.button21);
+            this.groupBox7.Controls.Add(this.LoginBttn);
             this.groupBox7.Controls.Add(this.label2);
             this.groupBox7.Controls.Add(this.label1);
-            this.groupBox7.Controls.Add(this.textBox2);
-            this.groupBox7.Controls.Add(this.textBox1);
+            this.groupBox7.Controls.Add(this.txtPass);
+            this.groupBox7.Controls.Add(this.txtUser);
             this.groupBox7.ForeColor = System.Drawing.Color.White;
             this.groupBox7.Location = new System.Drawing.Point(3, 42);
             this.groupBox7.Name = "groupBox7";
@@ -418,16 +418,17 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Forgot password?";
             // 
-            // button21
+            // LoginBttn
             // 
-            this.button21.BackColor = System.Drawing.Color.Aquamarine;
-            this.button21.ForeColor = System.Drawing.Color.Black;
-            this.button21.Location = new System.Drawing.Point(114, 76);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 23);
-            this.button21.TabIndex = 13;
-            this.button21.Text = "Login";
-            this.button21.UseVisualStyleBackColor = false;
+            this.LoginBttn.BackColor = System.Drawing.Color.Aquamarine;
+            this.LoginBttn.ForeColor = System.Drawing.Color.Black;
+            this.LoginBttn.Location = new System.Drawing.Point(114, 76);
+            this.LoginBttn.Name = "LoginBttn";
+            this.LoginBttn.Size = new System.Drawing.Size(75, 23);
+            this.LoginBttn.TabIndex = 13;
+            this.LoginBttn.Text = "Login";
+            this.LoginBttn.UseVisualStyleBackColor = false;
+            this.LoginBttn.Click += new System.EventHandler(this.LoginBttn_Click);
             // 
             // label2
             // 
@@ -510,10 +511,10 @@
 		private System.Windows.Forms.Button button18;
 		private System.Windows.Forms.Button button19;
 		private System.Windows.Forms.Button button20;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox txtUser;
+		private System.Windows.Forms.TextBox txtPass;
 		private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button LoginBttn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel1;

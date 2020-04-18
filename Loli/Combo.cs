@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Loli
 {
-    public partial class Combo : Form
+    public partial class FrmCombo : Form
     {
-        public Combo()
+        public FrmCombo()
         {
             InitializeComponent();
         }

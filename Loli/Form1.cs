@@ -12,6 +12,11 @@ namespace Loli
 {
 	public partial class Form1 : Form
 	{
+		private int attempt;
+		private string username;
+
+		public int MaxAttempts { get; private set; }
+
 		public Form1()
 		{
 			InitializeComponent();
@@ -43,14 +48,14 @@ namespace Loli
 
 		}
 
-		private void textBox2_TextChanged(object sender, EventArgs e)
+		private void txtPass_TextChanged(object sender, EventArgs e)
 		{
 
 		}
 
-		private void textBox1_TextChanged(object sender, EventArgs e)
+		private void txtUser_TextChanged(object sender, EventArgs e)
 		{
-			if (textBox1.Text == "Wail")
+			if (txtUser.Text == "Wail")
 			{
 				MessageBox.Show("success");
 			}
@@ -69,7 +74,44 @@ namespace Loli
 
 		private void button5_Click(object sender, EventArgs e)
 		{
+			FrmCombo frm = new FrmCombo();
+			frm.ShowDialog();
+		}
 
+		private void LoginBttn_Click(object sender, EventArgs e)
+		{
+			if (txtUser.Text == "Wail")
+				if (txtPass.Text == "1234")
+					MessageBox.Show("Login Succesful");
+				else
+					MessageBox.Show("Incorrect Passsword");
+			else
+			{
+				MessageBox.Show("Incorrect Username");
+			}
+			while ( attempt <= MaxAttempts )
+			{
+				if (txtUser.Text != username)
+				{
+					MessageBox.Show("Invalid username, " + (MaxAttempts - attempt) + "attempt remainig");
+					attempt++;
+					txtUser.Clear();
+					txtPass.Clear();
+					return;
+				}
+				else
+				{
+					attempt = 0;
+					MessageBox.Show("Login Succesful");
+					txtUser.Clear();
+					txtPass.Clear();
+
+					LoginBttn.Text = "Logout";
+					
+					break;
+				}
+			}
 		}
 	}
 }
+

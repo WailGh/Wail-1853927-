@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Combo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,7 +82,6 @@
     <Compile Include="frmRandomCombo.Designer.cs">
       <DependentUpon>frmRandomCombo.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSelfie.cs" />
     <Compile Include="Image.cs">
       <SubType>Form</SubType>
     </Compile>
